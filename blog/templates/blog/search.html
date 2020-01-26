@@ -1,0 +1,7 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<form method="GET" action="{% url 'blog:search' %}">
+		<input name="q" value="{{request.GET.q}}" placeholder="Search here...">
+		<button class="btn btn-success" type="submit">Ghorar dim korun!</button>
+	</form>
+{% endblock content %}
